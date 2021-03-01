@@ -12,19 +12,26 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.login-card {
+.register-card {
     margin-top: 30px;
     border: 1px solid lightgray;
     border-radius: 2px;
     padding: 20px;
 }
 
-.login-card-head {
+.register-card-head {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#login .form-group {
+#register .form-group {
     margin-bottom: 10px;
+}
+
+.submit-position {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 30px;
 }

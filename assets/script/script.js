@@ -1,4 +1,4 @@
-function login() {
+function register() {
     let tel = document.getElementById('tel');
     let cp = document.getElementById('cp');
     let pwd = document.getElementById('pwd');

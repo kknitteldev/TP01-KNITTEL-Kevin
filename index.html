@@ -15,60 +15,70 @@
 
 <body>
     <div class="container">
-        <div class="login-card">
-            <div class="login-card-head">
+        <div class="register-card">
+            <div class="register-card-head">
                 <h1>Création de compte</h1>
             </div>
-            <form id="login">
-                <div class="form-group">
-                    <label>NOM</label>
-                    <input class="form-control text-uppercase" type="text" placeholder="NOM" required>
+            <form id="register">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>NOM</label>
+                            <input class="form-control text-uppercase" type="text" placeholder="NOM" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Prénom</label>
+                            <input class="form-control" type="text" placeholder="Prénom" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Civilité</label>
+                            <select class="form-select" name="pets" id="pet-select" required>
+                                <option value="">Autre</option>
+                                <option value="m">Homme</option>
+                                <option value="f">Femme</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Adresse</label>
+                            <input class="form-control" type="text" placeholder="Adresse" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Code postal</label>
+                            <input id="cp" class="form-control" type="number" placeholder="Code postal" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Ville</label>
+                            <input class="form-control" type="text" placeholder="Ville" required>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>N° de téléphone (optionnel)</label>
+                            <input id="tel" class="form-control" type="number" placeholder="N° de téléphone">
+                        </div>
+                        <div class="form-group">
+                            <label>Adresse mail</label>
+                            <input class="form-control" type="email" placeholder="Adresse mail" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Nom de compte</label>
+                            <input class="form-control" type="text" placeholder="Nom de compte" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Mot de passe</label>
+                            <input id="pwd" class="form-control" type="password" placeholder="Mot de passe" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Confirmer le mot de passe</label>
+                            <input id="pwdConf" class="form-control" type="password"
+                                placeholder="Confirmer le mot de passe" required>
+                        </div>
+                        <div class="form-group submit-position">
+                            <input type="submit" class="btn btn-primary" onclick="register()">
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label>Prénom</label>
-                    <input class="form-control" type="text" placeholder="Prénom" required>
-                </div>
-                <div class="form-group">
-                    <label>Adresse</label>
-                    <input class="form-control" type="text" placeholder="Adresse" required>
-                </div>
-                <div class="form-group">
-                    <label>Code postal</label>
-                    <input id="cp" class="form-control" type="number" placeholder="Code postal" required>
-                </div>
-                <div class="form-group">
-                    <label>Ville</label>
-                    <input class="form-control" type="text" placeholder="Ville" required>
-                </div>
-                <div class="form-group">
-                    <label>N° de téléphone (optionnel)</label>
-                    <input id="tel" class="form-control" type="number" placeholder="N° de téléphone">
-                </div>
-                <div class="form-group">
-                    <label>Adresse mail</label>
-                    <input class="form-control" type="email" placeholder="Adresse mail" required>
-                </div>
-                <div class="form-group">
-                    <label>Civilité</label>
-                    <select class="form-select" name="pets" id="pet-select" required>
-                        <option value="">Autre</option>
-                        <option value="m">Homme</option>
-                        <option value="f">Femme</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Nom de compte</label>
-                    <input class="form-control" type="text" placeholder="Nom de compte" required>
-                </div>
-                <div class="form-group">
-                    <label>Mot de passe</label>
-                    <input id="pwd" class="form-control" type="password" placeholder="Mot de passe" required>
-                </div>
-                <div class="form-group">
-                    <label>Confirmer le mot de passe</label>
-                    <input id="pwdConf" class="form-control" type="password" placeholder="Confirmer le mot de passe" required>
-                </div>
-                <input type="submit" class="btn btn-primary" onclick="login()">
             </form>
         </div>
     </div>
